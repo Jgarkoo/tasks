@@ -22,6 +22,6 @@ function f(b) {
     }
 
     for(i = 0; i < b.length; i++) {
-        return 
+        console.log(b[i]);
     }
 }
