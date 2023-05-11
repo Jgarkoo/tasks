@@ -3,7 +3,7 @@
 
 function genericFunction(a) {
     try{ 
-        a
+        a()
     } catch (error) { 
      console.log(error);   
     } 
