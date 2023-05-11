@@ -9,15 +9,18 @@
 function f(b) {
     if(!Array.isArray(b)) {
         console.log('parameter has to be array');
+        return;
     }
 
     if(b.length === 0) {
         console.log('parameter can not be empty');
+        return;
     }
 
     for(i = 0; i < b.length; i++) {
-        if(b === 'Number') {
+        if(typeof b[i] !== 'Number') {
             console.log('parameter can only contain numbers');
+            return;
         }
     }
 
