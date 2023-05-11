@@ -3,7 +3,7 @@
 function getDivisors(a) {
     const arr1 = [];
     if(a !== Number && a <= 0) {
-        return 'Pharameter can not be 0 or less than 0';
+        return 'Pharameter must be greater than 0';
     }
     for(i = 1; i <= a; i++) {
         if(a % i === 0) {
@@ -12,7 +12,7 @@ function getDivisors(a) {
         
     }
     
-    console.log(arr1);
+    return arr1;
 }
 
 console.log(getDivisors(10));
