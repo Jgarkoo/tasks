@@ -13,7 +13,7 @@ const mix = ((...funs) => {
 
     let result;
     for(func in funs){
-        result = func(result);
+        result = funs[func](result);
     }
     
     return result;
