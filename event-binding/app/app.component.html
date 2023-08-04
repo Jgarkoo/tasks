@@ -1,0 +1,17 @@
+<div class="user-profile">
+    <h1>User Profile</h1>
+    <div>
+      <span class="label">Name:</span>
+      <input [(ngModel)]="name" class="input-field" />
+    </div>
+    <div>
+      <span class="label">Email:</span>
+      <input [(ngModel)]="email" class="input-field" />
+      <button (click)="onClick()">save</button>
+      <p>reacti yleobaa: {{ counter }}</p>
+    </div>
+    <div>
+      <span class="label">Age:</span>
+      <input [(ngModel)]="age" class="input-field" />
+    </div>
+  </div>
